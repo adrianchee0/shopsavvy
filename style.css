@@ -1,0 +1,22 @@
+/* You can add custom CSS here if needed, but the layout and basic styling
+   are handled by Tailwind CSS classes directly in the HTML. */
+
+/* Example of potential custom styles if needed: */
+/* body {
+    font-family: 'Inter', sans-serif;
+} */
+
+/* Style for the input placeholders to match the design */
+input::placeholder {
+    color: #9ca3af; /* Equivalent to gray-400 in Tailwind */
+}
+
+/* Custom styles for the background image section if you replace the placeholder */
+/* .bg-cover-image {
+    background-image: url('path/to/your/actual/image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem; /* rounded-lg */
+/* } */
+
+/* Add any additional custom styles here */
