@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSavvy - Create an account</title> <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter">
+
+    <div class="bg-black text-white py-3 text-sm flex justify-center items-center relative">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50% ! <a href="#" class="underline font-semibold">ShopNow</a>
+        <select class="text-white py-2 text-sm rounded-md p-1 bg-black text-white absolute right-24">
+            <option>English</option>
+            </select>
+    </div>
+
+    <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">ShopSavvy</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-700 hover:text-black">Home</a>
+            <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+            <a href="#" class="text-gray-700 hover:text-black">About</a>
+            <a href="#" class="text-black">Sign Up</a> </nav>
+        <div class="flex items-center space-x-4">
+            <div class="relative hidden md:block">
+                <input type="text" placeholder="What are you looking for ?" class="border border-gray-300 rounded-md py-1 px-3 pr-10 text-sm">
+                <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-xl text-gray-700 cursor-pointer"></i> </div>
+        </div>
+    </header>
+    <hr class="border-gray-200">
+
+    <main class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center md:items-start">
+        <section class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center pt-8 pb-16">
+            <div class="w-full max-w-lg h-96 bg-contain bg-center bg-no-repeat rounded-lg" style="background-image: url('./images/register.jpg');">
+                 </div>
+        </section>
+
+        <section class="w-full md:w-1/2 md:pl-16 flex flex-col justify-center items-center md:h-96 md:justify-center md:items-center pt-8 pb-16 md:mt-8">
+            <div class="w-full max-w-md">
+                <h2 class="text-3xl font-semibold mb-2">Create an account</h2> <p class="text-gray-700 mb-6">Enter your details below</p> <form>
+                    <div class="mb-6">
+                        <input type="text" id="name" placeholder="Name" class="w-full border-b border-gray-300 focus:border-black outline-none py-2">
+                    </div>
+                    <div class="mb-6">
+                        <input type="text" id="emailOrPhone" placeholder="Email or Phone Number" class="w-full border-b border-gray-300 focus:border-black outline-none py-2">
+                    </div>
+                    <div class="mb-6">
+                        <input type="password" id="password" placeholder="Password" class="w-full border-b border-gray-300 focus:border-black outline-none py-2">
+                    </div>
+
+                    <div class="flex flex-col mt-8">
+                        <button type="submit" class="bg-red-500 text-white py-3 px-8 rounded-md hover:bg-red-600 transition duration-300 w-full md:w-auto mb-4">Create Account</button> <a href="#" class="text-gray-700 font-medium hover:underline mt-2">Already have account? <span class="text-red-500">Log in</span></a> </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-16 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">ShopSavvy</h3>
+                <h4 class="font-semibold mb-2">Subscribe</h4>
+                <p class="text-gray-400 text-sm mb-4">Get 10% off your first order</p>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white text-sm py-2 px-3 rounded-l-md outline-none w-full border border-white">
+                    <button class="bg-red-500 text-white py-2 px-4 rounded-r-md hover:bg-red-600 transition duration-300"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Support</h3>
+                <p class="text-gray-400 text-sm mb-2">111 Singapore, The Cathay 229233</p>
+                <p class="text-gray-400 text-sm mb-2">shopsavvy@gmail.com</p>
+                <p class="text-gray-400 text-sm">+65 1234 5678</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Account</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">My Account</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Login / Register</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Cart</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Wishlist</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Shop</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Link</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Terms Of Use</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Download App</h3>
+                 <p class="text-gray-400 text-sm mb-4">Save $3 with App New User Only</p>
+                 <div class="flex space-x-2 mb-4">
+                     <div class="w-16 h-16 bg-white flex items-center justify-center rounded-md">
+                          <img src="./images/qr.svg" alt="QR Code">
+                     </div>
+                     <div class="flex flex-col space-y-2">
+                         <img src="https://placehold.co/100x30/000/FFF?text=Google+Play" alt="Google Play" class="rounded-md">
+                         <img src="https://placehold.co/100x30/000/FFF?text=App+Store" alt="App Store" class="rounded-md">
+                     </div>
+                 </div>
+                 <div class="flex space-x-4 text-gray-400 text-xl">
+                     <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-12">
+            &copy; Copyright ShopSavvy 2025. All right reserved
+        </div>
+    </footer>
+
+</body>
+</html>
