@@ -1,29 +1,18 @@
-const signupForm = document.getElementById('signup-form');
+const db = require('../db');
 
-signupForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
+exports.createUser = (req, res) => {
+  const { name, email } = req.body;
 
-    const formData = new FormData(signupForm);
-    const userData = Object.fromEntries(formData.entries());
+  if (!name || !email) {
+    return res.status(400).json({ message: 'Name and email are required' });
+  }
 
-    try {
-        const response = await fetch('/signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userData)
-        });
-
-        if (response.ok) {
-            const result = await response.json();
-            // Handle successful signup (e.g., redirect, display message)
-            console.log('Signup successful:', result);
-        } else {
-            // Handle signup error (e.g., display error message)
-            console.error('Signup failed:', response.status, response.statusText);
-        }
-    } catch (error) {
-        console.error('Error during signup:', error);
+  const sql = 'INSERT INTO users (name, email) VALUES (?, ?)';
+  db.query(sql, [name, email], (err, result) => {
+    if (err) {
+      console.error('Error inserting user:', err);
+      return res.status(500).json({ message: 'Database error' });
     }
-});
+    res.status(201).json({ message: 'User created successfully' });
+  });
+};
