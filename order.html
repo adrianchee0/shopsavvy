@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSavvy - Order History</title> <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter">
+
+    <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html">
+            <div class="text-2xl font-bold text-red-600">ShopSavvy</div>
+        </a>  
+         <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+            <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+            <a href="order.html" class="text-gray-700 hover:text-black font-bold">Order</a>
+            <a href="register.html" class="text-gray-700 hover:text-black">Sign Up</a>
+            <a href="login.html" class="text-gray-700 hover:text-black">Log In</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <div class="relative hidden md:block">
+                <input type="text" placeholder="What are you looking for ?" class="border border-gray-300 rounded-md py-1 px-3 pr-10 text-sm">
+                <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-xl text-gray-700 cursor-pointer"></i> </div>
+             <i class="fas fa-heart text-xl text-gray-700 cursor-pointer"></i>
+             <i class="fas fa-shopping-cart text-xl text-gray-700 cursor-pointer"></i> 
+             <select class="text-gray-700 text-sm border rounded-md p-1 text-center">
+                <option>English</option>
+                <option>中文</option>
+                <option>Español</option>
+                <option>Français</option>
+                <option>Deutsch</option>
+                <option>日本語</option>
+            </select>
+        </div>
+    </header>
+    <hr class="border-gray-200">
+
+    <main class="container mx-auto px-4 py-8">
+
+        <nav class="text-sm text-gray-600 mb-8">
+            <a href="index.html" class="hover:underline">Home</a> > Order History </nav>
+
+        <h2 class="text-2xl font-semibold mb-4">Cart</h2> <div class="overflow-x-auto mb-12"> <table class="min-w-full bg-white border border-gray-200 rounded-md table-fixed">
+                <thead>
+                    <tr class="bg-gray-100 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                        <th class="py-3 px-4 rounded-tl-md w-1/2">Product</th>
+                        <th class="py-3 px-4 w-auto">Price</th>
+                        <th class="py-3 px-4 w-auto">Quantity</th>
+                        <th class="py-3 px-4 rounded-tr-md text-right w-auto">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-200">
+                        <td class="py-4 px-4 flex items-center">
+                            <img src="./images/protein.png" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Whey Protein</span> </td>
+                        <td class="py-4 px-4"><span>$95.00</span></td> <td class="py-4 px-4">
+                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
+                        <td class="py-4 px-4 text-right"><span>$95.00</span></td> </tr>
+                    <tr class="border-b border-gray-200">
+                        <td class="py-4 px-4 flex items-center">
+                            <img src="./images/redoxon.avif" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Redaxon Vitamin C</span> </td>
+                        <td class="py-4 px-4"><span>$21.70</span></td> <td class="py-4 px-4">
+                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
+                        <td class="py-4 px-4 text-right"><span>$21.70</span></td> </tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4">Purchase History</h2> <div class="overflow-x-auto">
+             <table class="min-w-full bg-white border border-gray-200 rounded-md table-fixed">
+                <thead>
+                    <tr class="bg-gray-100 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                        <th class="py-3 px-4 rounded-tl-md w-1/2">Product</th>
+                        <th class="py-3 px-4 w-auto">Price</th>
+                        <th class="py-3 px-4 w-auto">Quantity</th>
+                        <th class="py-3 px-4 rounded-tr-md text-right w-auto">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-200">
+                        <td class="py-4 px-4 flex items-center">
+                            <img src="./images/omega.png" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Now Omega - 3</span> </td>
+                            <td class="py-4 px-4"><span>$26.28</span></td> <td class="py-4 px-4">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
+                            <td class="py-4 px-4 text-right"><span>$26.28</span></td> </tr>
+                    <tr class="border-b border-gray-200">
+                        <td class="py-4 px-4 flex items-center">
+                            <img src="./images/holistic.png" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Holistic Way Probiotic</span> </td>
+                            <td class="py-4 px-4"><span>$76.40</span></td> <td class="py-4 px-4">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
+                            <td class="py-4 px-4 text-right"><span>$76.40</span></td> </tr>
+                    </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="bg-black text-white py-16 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">ShopSavvy</h3>
+                <h4 class="font-semibold mb-2">Subscribe</h4>
+                <p class="text-gray-400 text-sm mb-4">Get 10% off your first order</p>
+                <div class="relative flex items-center border border-white rounded-md overflow-hidden w-full">
+                    <input type="email" placeholder="Enter your email" class="bg-transparent text-white text-sm py-2 pl-3 pr-12 outline-none w-full">
+                    <button class="absolute right-0 top-0 bottom-0 bg-red-500 text-white py-2 px-3 hover:bg-red-600 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Support</h3>
+                <p class="text-gray-400 text-sm mb-2">111 Singapore, The Cathay 229233</p>
+                <p class="text-gray-400 text-sm mb-2">shopsavvy@gmail.com</p>
+                <p class="text-gray-400 text-sm">+65 1234 5678</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Account</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">My Account</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Login / Register</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Cart</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Wishlist</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Shop</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Link</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Terms Of Use</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Download App</h3>
+                 <p class="text-gray-400 text-sm mb-4">Save $3 with App New User Only</p>
+                 <div class="flex space-x-2 mb-4">
+                     <div class="w-16 h-16 bg-white flex items-center justify-center rounded-md">
+                          <img src="./images/qr.svg" alt="QR Code">
+                     </div>
+                     <div class="flex flex-col space-y-2">
+                         <img src="https://placehold.co/100x30/000/FFF?text=Google+Play" alt="Google Play" class="rounded-md">
+                         <img src="https://placehold.co/100x30/000/FFF?text=App+Store" alt="App Store" class="rounded-md">
+                     </div>
+                 </div>
+                 <div class="flex space-x-4 text-gray-400 text-xl">
+                     <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-12">
+            &copy; Copyright ShopSavvy 2025. All right reserved
+        </div>
+    </footer>
+
+</body>
+</html>
