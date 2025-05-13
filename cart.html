@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopSavvy - Cart</title> <link rel="stylesheet" href="style.css">
+    <title>ShopSavvy - Cart</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,7 +14,7 @@
     <header class="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="index.html">
             <div class="text-2xl font-bold text-red-600">ShopSavvy</div>
-        </a>          
+        </a>
         <nav class="hidden md:flex space-x-8">
             <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
             <a href="#" class="text-gray-700 hover:text-black">Contact</a>
@@ -27,13 +28,16 @@
                 <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
             </div>
             <div class="md:hidden">
-                <i class="fas fa-bars text-xl text-gray-700 cursor-pointer"></i> </div>
+                <i class="fas fa-bars text-xl text-gray-700 cursor-pointer"></i>
+            </div>
              <i class="fas fa-heart text-xl text-gray-700 cursor-pointer"></i>
-             <i class="fas fa-shopping-cart text-xl text-gray-700 cursor-pointer"></i> <select class="text-gray-700 text-sm border rounded-md p-1 text-center">
+             <i class="fas fa-shopping-cart text-xl text-gray-700 cursor-pointer"></i>
+             <select class="text-gray-700 text-sm border rounded-md p-1 text-center">
                 <option>English</option>
                 <option>Malay</option>
                 <option>Mandarin</option>
                 <option>Tamil</option>
+            </select>
         </div>
     </header>
     <hr class="border-gray-200">
@@ -45,40 +49,48 @@
         </nav>
 
         <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border border-gray-200 rounded-md">
+            <table class="min-w-full bg-white border border-gray-200 rounded-md table-fixed">
                 <thead>
                     <tr class="bg-gray-100 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
-                        <th class="py-3 px-4 rounded-tl-md">Product</th>
-                        <th class="py-3 px-4">Price</th>
-                        <th class="py-3 px-4">Quantity</th>
-                        <th class="py-3 px-4 rounded-tr-md text-right">Subtotal</th>
+                        <th class="py-3 px-4 rounded-tl-md w-1/2">Product</th>
+                        <th class="py-3 px-4 w-auto">Price</th>
+                        <th class="py-3 px-4 w-auto">Quantity</th>
+                        <th class="py-3 px-4 rounded-tr-md text-right w-auto">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="border-b border-gray-200">
                         <td class="py-4 px-4 flex items-center">
-                            <button class="text-red-500 mr-4 hover:text-red-700"><i class="fas fa-times-circle"></i></button> <img src="./images/protein.png" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Whey Protein</span> </td>
-                        <td class="py-4 px-4">$95</td> <td class="py-4 px-4">
-                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
-                        <td class="py-4 px-4 text-right">$95</td> </tr>
+                            <button class="text-red-500 mr-4 hover:text-red-700"><i class="fas fa-times-circle"></i></button>
+                            <img src="./images/protein.png" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4">
+                            <span>Whey Protein</span>
+                        </td>
+                        <td class="py-4 px-4"><span>$95</span></td> <td class="py-4 px-4">
+                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1">
+                        </td>
+                        <td class="py-4 px-4 text-right"><span>$95</span></td> </tr>
                     <tr class="border-b border-gray-200">
                         <td class="py-4 px-4 flex items-center">
-                            <button class="text-red-500 mr-4 hover:text-red-700"><i class="fas fa-times-circle"></i></button> <img src="./images/redoxon.avif" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4"> <span>Redaxon Vitamin C</span> </td>
-                        <td class="py-4 px-4">$21.70</td> <td class="py-4 px-4">
-                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1"> </td>
-                        <td class="py-4 px-4 text-right">$21.70</td> </tr>
+                            <button class="text-red-500 mr-4 hover:text-red-700"><i class="fas fa-times-circle"></i></button>
+                            <img src="./images/redoxon.avif" alt="Product Image" class="w-16 h-16 object-cover rounded-md mr-4">
+                            <span>Redaxon Vitamin C</span>
+                        </td>
+                        <td class="py-4 px-4"><span>$21.70</span></td> <td class="py-4 px-4">
+                            <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1">
+                        </td>
+                        <td class="py-4 px-4 text-right"><span>$21.70</span></td> </tr>
                     </tbody>
             </table>
         </div>
 
-        <div class="flex justify-between mt-8 mb-8"> <a href="index.html" class="border border-gray-300 text-gray-700 py-2 px-6 rounded-md hover:bg-gray-100 transition duration-300">Return To Shop</a>
-             <button class="border border-gray-300 text-gray-700 py-2 px-6 rounded-md hover:bg-gray-100 transition duration-300">Update Cart</button>
+        <div class="flex justify-between mt-8 mb-8">
+            <a href="index.html" class="border border-gray-300 text-gray-700 py-2 px-6 rounded-md hover:bg-gray-100 transition duration-300">Return To Shop</a>
+            <button class="border border-gray-300 text-gray-700 py-2 px-6 rounded-md hover:bg-gray-100 transition duration-300">Update Cart</button>
         </div>
 
+        <div class="flex flex-col md:flex-row justify-between mt-8">
 
-        <div class="flex flex-col md:flex-row justify-between mt-8 items-start">
-
-             <div class="flex items-center mb-8 md:mb-0 mt-2"> <input type="text" placeholder="Coupon Code" class="border border-gray-300 rounded-l-md py-2 px-3 outline-none">
+             <div class="flex items-center mb-8 md:mb-0"> <input type="text" placeholder="Coupon Code" class="border border-gray-300 rounded-l-md py-2 px-3 outline-none">
                 <button class="bg-red-500 text-white py-2 px-6 rounded-r-md hover:bg-red-600 transition duration-300">Apply Coupon</button>
             </div>
 
@@ -98,7 +110,6 @@
                 <button class="bg-red-500 text-white py-3 px-6 rounded-md w-full hover:bg-red-600 transition duration-300">Procees to checkout</button>
             </div>
         </div>
-
 
     </main>
 
