@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSavvy - Product Details</title> <link rel="stylesheet" href="style.css"> <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> </head>
+<body class="font-inter">
+
+    <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html">
+            <div class="text-2xl font-bold text-red-600">ShopSavvy</div> </a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+            <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+            <a href="order.html" class="text-gray-700 hover:text-black">Order</a>
+            <a href="register.html" class="text-gray-700 hover:text-black">Sign Up</a>
+            <a href="login.html" class="text-gray-700 hover:text-black">Log In</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <div class="relative hidden md:block">
+                <input type="text" placeholder="What are you looking for ?" class="border border-gray-300 rounded-md py-1 px-3 pr-10 text-sm">
+                <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-xl text-gray-700 cursor-pointer"></i> </div>
+             <i class="fas fa-heart text-xl text-gray-700 cursor-pointer"></i>
+             <i class="fas fa-shopping-cart text-xl text-gray-700 cursor-pointer"></i> <select class="text-gray-700 text-sm border rounded-md p-1 text-center">
+                <option>English</option>
+                <option>Malay</option>
+                <option>Mandarin</option>
+                <option>Tamil</option>
+            </select>
+        </div>
+    </header>
+    <hr class="border-gray-200">
+
+    <main class="container mx-auto px-4 py-8">
+
+        <nav class="text-sm text-gray-600 mb-8">
+            <a href="index.html" class="hover:underline">Home</a> > Product Details </nav>
+
+        <section class="flex flex-col md:flex-row gap-4 mb-12 items-center"> <div class="w-full md:w-1/2 flex flex-col md:flex-row gap-4 items-start md:items-stretch">
+                    <div class="flex flex-row md:flex-col space-x-3 md:space-x-0 md:space-y-4 overflow-x-auto md:overflow-visible">
+                    <div class="w-20 bg-gray-200 rounded-md flex items-center justify-center cursor-pointer hover:border-red-500 border-2 border-transparent transition duration-300 flex-grow">
+                        <img src="./images/protein.png" alt="Thumbnail 1" id="thumb1" class="max-w-full max-h-full object-contain w-full h-full"> </div>
+                     <div class="w-20 bg-gray-200 rounded-md flex items-center justify-center cursor-pointer hover:border-red-500 border-2 border-transparent transition duration-300 flex-grow">
+                        <img src="./images/protein_2.png" alt="Thumbnail 2" id="thumb2" class="max-w-full max-h-full object-contain w-full h-full"> </div>
+                     <div class="w-20 bg-gray-200 rounded-md flex items-center justify-center cursor-pointer hover:border-red-500 border-2 border-transparent transition duration-300 flex-grow">
+                        <img src="./images/protein_3.png" alt="Thumbnail 3" id="thumb3" class="max-w-full max-h-full object-contain w-full h-full"> </div>
+                     <div class="w-20 bg-gray-200 rounded-md flex items-center justify-center cursor-pointer hover:border-red-500 border-2 border-transparent transition duration-300 flex-grow">
+                        <img src="./images/protein_4.png" alt="Thumbnail 4" id="thumb4" class="max-w-full max-w-full object-contain w-full h-full"> </div>
+                    </div>
+
+                <div class="w-full md:w-3/4 h-[300px] bg-gray-200 rounded-md flex items-center justify-center"> <img src="./images/protein.png" alt="Main Product Image" id="mainProductImage" class="max-w-full max-h-full object-contain">
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2"> <h2 class="text-2xl font-semibold mb-2">Whey Protein</h2> <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 mr-2 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-600 text-sm">(99 Reviews)</span> <span class="text-green-600 text-sm ml-4">In Stock</span> </div>
+                <p class="text-xl font-medium text-red-500 mb-4">$95.00</p> <p class="text-gray-700 mb-6">
+                    Protein Blend ( Whey Protein Isolates, Whey Protein Concentrate, Whey Peptides), Cocoa, Lecithin,
+                    Natural and Artificial Flavour, Acesulfame Potassium. </p>
+
+                <hr class="border-gray-200 my-6">
+
+                <div class="flex items-center mb-6">
+                    <div class="flex items-center mr-4">
+                         <span class="mr-2">Quantity:</span>
+                        <input type="number" value="1" min="1" class="w-16 border border-gray-300 rounded-md text-center py-1">
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="bg-red-500 text-white py-3 px-8 rounded-md hover:bg-red-600 transition duration-300 text-center inline-block">Buy Now</a> <button class="border border-gray-300 text-gray-700 py-3 px-8 rounded-md hover:bg-gray-100 transition duration-300">
+                             <i class="far fa-heart"></i> </button>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-md p-4 w-auto"> <div class="flex items-center mb-3">
+                        <i class="fas fa-truck text-xl mr-4"></i>
+                        <div>
+                            <p class="font-medium">Free Delivery</p>
+                            <p class="text-gray-600 text-sm">Enter your postal code for Delivery Availability</p>
+                        </div>
+                    </div>
+                    <hr class="border-gray-200 my-3">
+                    <div class="flex items-center">
+                         <i class="fas fa-undo text-xl mr-4"></i>
+                        <div>
+                            <p class="font-medium">Return Delivery</p>
+                            <p class="text-gray-600 text-sm">Free 30 Days Delivery Returns. Details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="text-2xl font-semibold mb-6">Related Item</h2>
+        <section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="border border-gray-200 rounded-md overflow-hidden relative">
+                    <i class="fas fa-heart absolute top-2 right-2 text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                    <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img src="./images/redoxon.avif" alt="Product Image" class="max-w-full max-h-full object-contain">
+                        <!-- source: https://www.redoxon.com.my/redoxon-double-action-adult-chewable -->
+                         </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium mb-1">Redoxon Vitamin C</h3> <div class="flex items-center mb-2">
+                            
+                            <span class="text-black-500">$76.40</span> </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <div class="text-yellow-400 mr-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>(88)</span> </div>
+                            <a href="cart.html" class="mt-4 bg-black text-white py-2 px-4 rounded-md w-full hover:bg-red-800 transition duration-300 text-center inline-block">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-md overflow-hidden relative">
+                    <i class="fas fa-heart absolute top-2 right-2 text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                    <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img src="./images/holistic.png" alt="Product Image" class="max-w-full max-h-full object-contain">
+                        <!-- source: https://www.amazon.sg/Holistic-Way-Strength-Probiotic-Vegetarian/dp/B07KY5M53F -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium mb-1">Holistic Way Probiotic</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-black-500">$76.40</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <div class="text-yellow-400 mr-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span>(75)</span>
+                        </div>
+                        <a href="cart.html" class="mt-4 bg-black text-white py-2 px-4 rounded-md w-full hover:bg-red-800 transition duration-300 text-center inline-block">Add To Cart</a>
+                    </div>
+                </div>
+                 <div class="border border-gray-200 rounded-md overflow-hidden relative">
+                    <i class="fas fa-heart absolute top-2 right-2 text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                    <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img src="./images/omega.png" alt="Product Image" class="max-w-full max-h-full object-contain">
+                        <!-- source: https://www.amazon.sg/Supplements-Molecularly-Distilled-Cardiovascular-Softgels/dp/B000J18RSW -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium mb-1">Now Omega-3</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-black-500">$26.28</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <div class="text-yellow-400 mr-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span>(99)</span>
+                        </div>
+                        <a href="cart.html" class="mt-4 bg-black text-white py-2 px-4 rounded-md w-full hover:bg-red-800 transition duration-300 text-center inline-block">Add To Cart</a>
+                    </div>
+                </div>
+                 <div class="border border-gray-200 rounded-md overflow-hidden relative">
+                    <i class="fas fa-heart absolute top-2 right-2 text-gray-400 hover:text-red-500 cursor-pointer"></i>
+                    <a href="./product.html">
+                        <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+                            <img src="./images/protein.png" alt="Product Image" class="max-w-full max-h-full object-contain">
+                            <!-- source: https://www.amazon.sg/Optimum-Nutrition-Chocolate-Standard-Protein/dp/B07B33QR7C -->
+                        </div>
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium mb-1">Whey Protein</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-black-500">$95</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <div class="text-yellow-400 mr-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span>(99)</span>
+                        </div>
+                        <a href="cart.html" class="mt-4 bg-black text-white py-2 px-4 rounded-md w-full hover:bg-red-800 transition duration-300 text-center inline-block">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black text-white py-16 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">ShopSavvy</h3>
+                <h4 class="font-semibold mb-2">Subscribe</h4>
+                <p class="text-gray-400 text-sm mb-4">Get 10% off your first order</p>
+                <div class="relative flex items-center border border-white rounded-md overflow-hidden w-full">
+                    <input type="email" placeholder="Enter your email" class="bg-transparent text-white text-sm py-2 pl-3 pr-12 outline-none w-full">
+                    <button class="absolute right-0 top-0 bottom-0 bg-red-500 text-white py-2 px-3 hover:bg-red-600 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Support</h3>
+                <p class="text-gray-400 text-sm mb-2">111 Singapore, The Cathay 229233</p>
+                <p class="text-gray-400 text-sm mb-2">shopsavvy@gmail.com</p>
+                <p class="text-gray-400 text-sm">+65 1234 5678</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Account</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">My Account</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Login / Register</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Cart</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Wishlist</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Shop</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Link</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Terms Of Use</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white text-sm">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Download App</h3>
+                 <p class="text-gray-400 text-sm mb-4">Save $3 with App New User Only</p>
+                 <div class="flex space-x-2 mb-4">
+                     <div class="w-16 h-16 bg-white flex items-center justify-center rounded-md">
+                          <img src="./images/qr.svg" alt="QR Code">
+                     </div>
+                     <div class="flex flex-col space-y-2">
+                         <img src="https://placehold.co/100x30/000/FFF?text=Google+Play" alt="Google Play" class="rounded-md">
+                         <img src="https://placehold.co/100x30/000/FFF?text=App+Store" alt="App Store" class="rounded-md">
+                     </div>
+                 </div>
+                 <div class="flex space-x-4 text-gray-400 text-xl">
+                     <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-12">
+            &copy; Copyright ShopSavvy 2025. All right reserved
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mainImage = document.getElementById('mainProductImage');
+            const thumbnails = [
+                document.getElementById('thumb1'),
+                document.getElementById('thumb2'),
+                document.getElementById('thumb3'),
+                document.getElementById('thumb4'),
+            ];
+
+            thumbnails.forEach(thumb => {
+                if (thumb) {
+                    thumb.addEventListener('click', function () {
+                        if (mainImage && this.src) {
+                             mainImage.src = this.src;
+                        }
+                        thumbnails.forEach(t => t && t.parentElement.classList.remove('border-red-500'));
+                        this.parentElement.classList.add('border-red-500');
+                    });
+                }
+            });
+
+            const quantitySection = document.querySelector('.flex.items-center.space-x-4.mb-6');
+            if (quantitySection) {
+                const quantityInput = quantitySection.querySelector('input[type="text"]');
+                const minusButton = quantityInput.previousElementSibling;
+                const plusButton = quantityInput.nextElementSibling;
+
+                if(minusButton && quantityInput && plusButton) {
+                    minusButton.addEventListener('click', () => {
+                        let currentValue = parseInt(quantityInput.value);
+                        if (currentValue > 1) {
+                            quantityInput.value = currentValue - 1;
+                        }
+                    });
+
+                    plusButton.addEventListener('click', () => {
+                        let currentValue = parseInt(quantityInput.value);
+                        quantityInput.value = currentValue + 1;
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
